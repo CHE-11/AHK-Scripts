@@ -31,7 +31,3 @@ https://user-images.githubusercontent.com/57516026/178159642-f753c4a7-351c-4bd9-
 
 
 
-## FigmaSaver
-WIP
-
-
