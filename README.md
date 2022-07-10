@@ -26,7 +26,8 @@ Once you have hit the end of the MegaClip, it cycles back to the start and runs 
 
 One of the coolest things you can do with this is have it alter the text in memory before it is pasted and it just takes a little bit of code. 
 
-![MegaClip gif](./MegaClip.gif)
+
+https://user-images.githubusercontent.com/57516026/178159642-f753c4a7-351c-4bd9-b1a6-aad3bf823b97.mp4
 
 
 
