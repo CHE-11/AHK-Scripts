@@ -6,10 +6,17 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
 ; Change Hotkey to whatever you want.
 !p::
-    ; Change Download Location
+    ; Path to Download Location
     DownloadLocation := "C:\Users\Connor\Downloads\"
-    ; Change Path to StyleSheet
+    ; Path to StyleSheet
     PathToStyleSheet := "C:\Users\Connor\Documents\MEGA\AutomationStuff\PDFStyling\pdf_styling.css"
+    ; Path to HTML Template
+    PathToHTMLTemplate := "C:\Users\Connor\Documents\MEGA\AutomationStuff\PDFStyling\pdf_html_template.html"
+    ; Enable Table of Contents?
+    TableOfContents := false
+    ; Enable Cover?
+    Cover := true
+
 
 
     Clip0 := ClipBoard
@@ -18,11 +25,29 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
     
     Run, cmd.exe
     Sleep, 500
-    PercollateCmd:="percollate pdf " Clip0 " --output " DownloadLocation domain "-" title ".pdf --style " PathToStyleSheet
+    if (TableOfContents = true)
+    {
+    PercollateCmd:="percollate pdf " Clip0 " --output " DownloadLocation domain "-" title ".pdf --toc --style " PathToStyleSheet " --template " PathToHTMLTemplate
+    }
+    else{
+    PercollateCmd:="percollate pdf " Clip0 " --output " DownloadLocation domain "-" title ".pdf --no-toc --style " PathToStyleSheet " --template " PathToHTMLTemplate
+    }
+    Sleep, 100
+    if (Cover = true)
+    {
+        PercollateCmd:= PercollateCmd " --cover"
+    }
+    else
+    {
+        PercollateCmd:= PercollateCmd
+    }
     
-    Sleep, 500
+    Sleep, 1000
     Send, %PercollateCmd%
     Send, {ENTER}
+
+
+
     
     Loop, 2
     {
@@ -30,3 +55,5 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
             ControlSend,, exit{Enter}, ahk_exe cmd.exe
         Sleep, 500
     }
+
+   
