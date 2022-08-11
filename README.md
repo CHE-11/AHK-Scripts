@@ -8,11 +8,14 @@ All of the scripts require you to download AutoHotKey(AHK) on a windows machine 
 - MegaClip lets you create a temporary array of your clipboard so you can copy a lot of items from one location and then repaste them to another location without having to hop back and forth.
 
 
-
 ## URL_to_PDF
 Requires [Percollate](https://github.com/danburzo/percollate). 
 
 After you have downloaded Percollate, all you have to do for this to work is change your download location and your path to a PDF Stylesheet (percollate has a [PDF template](https://github.com/danburzo/percollate/blob/main/templates/default.css) you should use or use mine that is included). From there, you simply copy the link to your clipboard, press your hotkey (default is Alt + P), and the URL is converted to a PDF. Inside the AHK file you can set if you want to have cover or table of content enabled. 
+
+## EPUB_to_PDF
+Requires Calibre for its CLI tool. [Calibre](https://calibre-ebook.com/)
+For all of those times you need to convert an EPUB to a PDF. Simply copy the path to the EPUB file you want to convert then click Ctrl + Alt + P which will convert the file and place it in the same directory. 
 
 ## MegaClip
 Using MegaClip is simple. By default, there are three main hotkeys: CapsLock + C which clears the MegaClip memory, Ctrl + Alt + C which store an item to the MegaClip memory, and Ctrl + Alt + V which pastes from the MegaClip keyboard. When you add an item to the clipboard, it gets placed at the end and a popover shows the text copied and the number it is placed in the MegaClip. 
