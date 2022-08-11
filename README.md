@@ -5,7 +5,7 @@ I keep a collection of my favorite AHK scripts that I made to automate some of t
 All of the scripts require you to download AutoHotKey(AHK) on a windows machine to work. You can find the latest release at the [official AHK Site](https://www.autohotkey.com/).
 
 - URL_to_PDF simply takes a URL and makes it into a PDF. Requires [Percollate](https://github.com/danburzo/percollate). 
-- EPUB_to_PDF takes in a path to a EPUB file and converts it to a PDF. Requires Calibre for its CLI tool. [Calibre](https://calibre-ebook.com/)
+- EPUB_to_PDF takes in a path to a EPUB file and converts it to a PDF. Requires [Calibre](https://calibre-ebook.com/) for its CLI tool. 
 - MegaClip lets you create a temporary array of your clipboard so you can copy a lot of items from one location and then repaste them to another location without having to hop back and forth.
 
 ---
@@ -15,7 +15,7 @@ Requires [Percollate](https://github.com/danburzo/percollate).
 After you have downloaded Percollate, all you have to do for this to work is change your download location and your path to a PDF Stylesheet (percollate has a [PDF template](https://github.com/danburzo/percollate/blob/main/templates/default.css) you should use or use mine that is included). From there, you simply copy the link to your clipboard, press your hotkey (default is Alt + P), and the URL is converted to a PDF. Inside the AHK file you can set if you want to have cover or table of content enabled. 
 
 ## EPUB_to_PDF
-Requires Calibre for its CLI tool. [Calibre](https://calibre-ebook.com/)
+Requires [Calibre](https://calibre-ebook.com/) for its CLI tool. 
 For all of those times you need to convert an EPUB to a PDF. Simply copy the path to the EPUB file you want to convert then click Ctrl + Alt + P which will convert the file and place it in the same directory. 
 
 ## Figma Saver
