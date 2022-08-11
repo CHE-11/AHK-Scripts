@@ -5,9 +5,10 @@ I keep a collection of my favorite AHK scripts that I made to automate some of t
 All of the scripts require you to download AutoHotKey(AHK) on a windows machine to work. You can find the latest release at the [official AHK Site](https://www.autohotkey.com/).
 
 - URL_to_PDF simply takes a URL and makes it into a PDF. Requires [Percollate](https://github.com/danburzo/percollate). 
+- EPUB_to_PDF takes in a path to a EPUB file and converts it to a PDF. Requires Calibre for its CLI tool. [Calibre](https://calibre-ebook.com/)
 - MegaClip lets you create a temporary array of your clipboard so you can copy a lot of items from one location and then repaste them to another location without having to hop back and forth.
 
-
+---
 ## URL_to_PDF
 Requires [Percollate](https://github.com/danburzo/percollate). 
 
@@ -16,6 +17,9 @@ After you have downloaded Percollate, all you have to do for this to work is cha
 ## EPUB_to_PDF
 Requires Calibre for its CLI tool. [Calibre](https://calibre-ebook.com/)
 For all of those times you need to convert an EPUB to a PDF. Simply copy the path to the EPUB file you want to convert then click Ctrl + Alt + P which will convert the file and place it in the same directory. 
+
+## Figma Saver
+Simple utility to save Figma shortcuts to your local files. Instead of paying for folders in figma, you can use your local file directory and keep all of your figma files in drafts instead of folders to avoid paying. Yes I am this cheap. 
 
 ## MegaClip
 Using MegaClip is simple. By default, there are three main hotkeys: CapsLock + C which clears the MegaClip memory, Ctrl + Alt + C which store an item to the MegaClip memory, and Ctrl + Alt + V which pastes from the MegaClip keyboard. When you add an item to the clipboard, it gets placed at the end and a popover shows the text copied and the number it is placed in the MegaClip. 
