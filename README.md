@@ -34,8 +34,11 @@ Once you have hit the end of the MegaClip, it cycles back to the start and runs 
 
 One of the coolest things you can do with this is have it alter the text in memory before it is pasted and it just takes a little bit of code. 
 
-
 https://user-images.githubusercontent.com/57516026/178159642-f753c4a7-351c-4bd9-b1a6-aad3bf823b97.mp4
+
+## Text Tiles
+Text Tiles is another utility for manipulating text. Once you select some text and press your desired hotkey, a small GUI appears with different options for manipulating the text, running other scripts, etc. See the README in the text-tiles folder for more information on how to use it. 
+
 
 
 
