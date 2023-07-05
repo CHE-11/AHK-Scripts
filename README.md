@@ -7,6 +7,7 @@ All of the scripts require you to download AutoHotKey(AHK) on a windows machine 
 - URL_to_PDF simply takes a URL and makes it into a PDF. Requires [Percollate](https://github.com/danburzo/percollate). 
 - EPUB_to_PDF takes in a path to a EPUB file and converts it to a PDF. Requires [Calibre](https://calibre-ebook.com/) for its CLI tool. 
 - MegaClip lets you create a temporary array of your clipboard so you can copy a lot of items from one location and then repaste them to another location without having to hop back and forth.
+- RegionWrapper is a simple script to create regions in code. Works in tandem with the Region Viewer extension in VSCode for max efficiency. Can either use a hotkey to create a region or press CapsLock + R to show a gui to select an option. 
 
 ---
 ## URL_to_PDF
